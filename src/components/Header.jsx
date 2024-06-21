@@ -34,6 +34,14 @@ const Header = () => {
               Contact
             </a>
           </li>
+          <li>
+            <a
+              href="#contact"
+              className="hover:text-white font-bold transition bg-blue-500 py-1 px-3 rounded-2xl"
+            >
+              Hire me
+            </a>
+          </li>
         </ul>
       </nav>
     </header>

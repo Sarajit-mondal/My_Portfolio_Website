@@ -11,7 +11,7 @@ function Home() {
     <div className="space-y-10">
       <Header></Header>
       <Hero></Hero>
-      {/* <About></About> */}
+      <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>

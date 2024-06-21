@@ -2,6 +2,7 @@ import { useState } from "react";
 import TypewriterEffect from "./TypewriterEffect";
 import resume from "../assets/resume.pdf";
 import CV from "../assets/CV.pdf";
+import { FaDownload } from "react-icons/fa";
 const Hero = () => {
   const myName = "I  am Sarajit Mandal";
   const [textLenght, setTextLength] = useState(0);
@@ -31,16 +32,16 @@ const Hero = () => {
             <a
               href={resume}
               download="Sarajit_Mandal_Resume.pdf"
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300"
+              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300 flex items-center gap-2 font-bold"
             >
-              My Resume
+              My Resume <FaDownload />
             </a>
             <a
               href={CV}
               download="Sarajit_Mandal_CV.pdf"
-              className="px-4 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-700 transition duration-300"
+              className="px-4 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-700 transition duration-300 flex items-center gap-2 font-bold"
             >
-              My CV
+              My CV <FaDownload />
             </a>
           </div>
         </div>
