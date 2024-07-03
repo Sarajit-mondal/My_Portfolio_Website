@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 
 const DropdownButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,55 +22,52 @@ const DropdownButton = () => {
           onClick={toggleDropdown}
         >
           Social Media
-          <svg
-            className="-mr-1 ml-2 h-5 w-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.293 9.707a1 1 0 010-1.414L9 4.586V1a1 1 0 112 0v3.586l3.707 3.707a1 1 0 01-1.414 1.414L10 5.414l-4.293 4.293a1 1 0 01-1.414 0z"
-              clipRule="evenodd"
-            />
-          </svg>
+          {isOpen ? (
+            <RiArrowDropDownLine className="text-xl" />
+          ) : (
+            <RiArrowDropUpLine className="text-xl" />
+          )}
         </button>
       </div>
       {isOpen && (
         <div
           onClick={toggleDropdown}
-          className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+          className="origin-top-right absolute right-0 mt-2 w-auto rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <div className="py-1" role="none">
+          <div
+            className="py-1 [&>a]:flex [&>a]:items-center [&>a]:gap-x-1 "
+            role="none"
+          >
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/sarajit-mandal"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               role="menuitem"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <FaLinkedin className="text-blue-500" /> LinkedIn
             </a>
             <a
-              href="https://github.com/"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              href="https://github.com/Sarajit-mondal"
+              className="block px-6 py-2 text-sm text-gray-700 hover:bg-gray-100"
               role="menuitem"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaGithub className="text-red-500" />
               GitHub
             </a>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/sarajit.mondal.777"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               role="menuitem"
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FaFacebook className="text-blue-500" />
               Facebook
             </a>
           </div>
