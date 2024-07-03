@@ -131,11 +131,11 @@ const Skills = () => {
         <h2 className="text-3xl font-extrabold text-gray-900 mb-6 text-center">
           Skills
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className=" p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className=" p-4 bg-white rounded-lg  transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/50"
             >
               <div className="flex items-center cursor-pointer hover:ml-12 hover:ease-linear hover:duration-300">
                 <div className="flex-shrink-0">
