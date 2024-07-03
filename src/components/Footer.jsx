@@ -17,6 +17,8 @@ const Footer = () => {
         >
           GitHub
         </a>
+        <p>Mobile : +8801990925968</p>
+        <p>Email : sarajitmondal012@gmail.com</p>
       </div>
     </footer>
   );

@@ -6,16 +6,16 @@ const About = () => {
         <h2 className="text-3xl font-bold text-center mb-4">About Me</h2>
         <div className="my-5">
           <h3 className="text-xl font-bold mb-2">
-            Sarajit Mondal - Junior Web Developer
+            Sarajit Mondal - Web Developer
           </h3>
           <p className=" max-w-2xl mx-auto text-justify">
-            I am a passionate junior web developer with a knack for creating
-            elegant and responsive web applications. My journey in web
-            development started with curiosity and grew into a full-fledged
-            career. I thrive on the challenges of translating complex problems
-            into user-friendly digital solutions. With a strong foundation in
-            HTML, CSS, JavaScript, and modern frameworks like React and Next.js,
-            I am dedicated to continuous learning and improvement. I enjoy
+            I am a passionate web developer with a knack for creating elegant
+            and responsive web applications. My journey in web development
+            started with curiosity and grew into a full-fledged career. I thrive
+            on the challenges of translating complex problems into user-friendly
+            digital solutions. With a strong foundation in HTML, CSS,
+            JavaScript, and modern frameworks like React and Next.js, I am
+            dedicated to continuous learning and improvement. I enjoy
             collaborating with teams and contributing to meaningful projects
             that make a difference. My goal is to leverage my skills to build
             innovative web applications that enhance user experiences and drive

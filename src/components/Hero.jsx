@@ -11,11 +11,14 @@ const Hero = () => {
     <section className="bg-gray-900 text-white h-screen flex items-center justify-center">
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center p-6  rounded-lg shadow-lg">
-          <img
-            src="https://i.ibb.co/60rtZpB/profile-pic-3.png"
-            alt="Profile"
-            className="mx-auto rounded-full size-40 mb-4 border-8 border-b-blue-500 border-t-cyan-500 shadow-xl shadow-blue-500/50"
-          />
+          <div className="mx-auto size-44  relative ">
+            <img
+              src="https://i.ibb.co/SQj7HTc/profile-pic-4.png"
+              alt="Profile"
+              className="mx-auto rounded-full mb-4 z-20 absolute"
+            />
+            <div className=" size-44 z-30 border-8 border-b-blue-500 border-t-cyan-500 shadow-xl animate-spin shadow-blue-500/50 rounded-full"></div>
+          </div>
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold">
               Hello,{" "}
@@ -26,7 +29,10 @@ const Hero = () => {
               />
               {textLenght + 1 === myName.length ? "." : "|"}
             </h1>
-            <p className="mt-4 text-xl">Junior Web Developer</p>
+            <p className="mt-4 text-xl max-w-xl mx-auto">
+              I am a passionate Web Developer with a strong focus on creating
+              dynamic and responsive web applications.
+            </p>
           </div>
           <div className=" mt-5 flex justify-center space-x-4">
             <a

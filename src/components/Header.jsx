@@ -13,7 +13,7 @@ const Header = () => {
             speed={100}
           ></TypewriterEffect>
         </div>
-        <ul className="flex space-x-4">
+        <ul className="hidden md:flex space-x-4 ">
           <li>
             <a href="#hero" className="hover:text-blue-400 transition">
               About
