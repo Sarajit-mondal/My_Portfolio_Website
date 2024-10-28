@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <div className="bg-gray-900 ">
-      <h2 className="text-3xl font-extrabold pt-10 text-white">
+      <h2 className="text-3xl font-extrabold pt-10 text-white text-center">
         Education & Contact
       </h2>
       <div className="flex  flex-col justify-center md:flex-row gap-12">
@@ -55,7 +55,7 @@ const Contact = () => {
         </section>
         {/* contact section */}
         <section id="contact" className="text-white p-8">
-          <div className="container mx-auto">
+          <div className="container mx-auto text-center">
             <h2 className="text-2xl font-bold text-center mb-4">Contact</h2>
             <form
               ref={form}
