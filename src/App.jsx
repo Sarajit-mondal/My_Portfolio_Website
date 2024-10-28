@@ -3,7 +3,7 @@ import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <div className="w-11/12 max-w-[1280px] mx-auto">
+    <div className="w-full lg:w-11/12 max-w-[1280px] mx-auto">
       <Home></Home>
     </div>
   );

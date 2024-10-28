@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="flex  flex-col justify-center md:flex-row gap-12">
         {/* education section  */}
         <section className="py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className=" mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-2xl font-extrabold text-white mb-6 text-center">
               Education
             </h2>
