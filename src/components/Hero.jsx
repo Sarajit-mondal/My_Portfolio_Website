@@ -3,14 +3,16 @@ import TypewriterEffect from "./TypewriterEffect";
 import resume from "../assets/resume.pdf";
 import CV from "../assets/CV.pdf";
 import { FaDownload } from "react-icons/fa";
+
 const Hero = () => {
-  const myName = "I  am Sarajit Mandal";
-  const [textLenght, setTextLength] = useState(0);
+  const myName = "I am Sarajit Mandal";
+  const [textLength, setTextLength] = useState(0);
 
   return (
-    <section className="bg-gray-900 text-white h-screen flex items-center justify-center">
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center p-6  rounded-lg shadow-lg">
+    <section className="bg-gray-900 text-white h-screen flex items-center justify-center p-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center min-h-screen">
+        {/* Left Section */}
+        <div className="md:w-1/2 flex flex-col items-center text-center md:text-left p-6">
           <div className="mx-auto size-44  relative ">
             <img
               src="https://i.ibb.co/SQj7HTc/profile-pic-4.png"
@@ -19,22 +21,20 @@ const Hero = () => {
             />
             <div className=" size-44 z-30 border-8 border-b-blue-500 border-t-cyan-500 shadow-xl animate-spin shadow-blue-500/50 rounded-full"></div>
           </div>
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold">
-              Hello,{" "}
-              <TypewriterEffect
-                setTextLength={setTextLength}
-                text={myName}
-                speed={500}
-              />
-              {textLenght + 1 === myName.length ? "." : "|"}
-            </h1>
-            <p className="mt-4 text-xl max-w-xl mx-auto">
-              I am a passionate Web Developer with a strong focus on creating
-              dynamic and responsive web applications.
-            </p>
-          </div>
-          <div className=" mt-5 flex justify-center space-x-4">
+          <h1 className="text-3xl md:text-4xl mt-4 text-center font-bold mb-2">
+            Hello,{" "}
+            <TypewriterEffect
+              setTextLength={setTextLength}
+              text={myName}
+              speed={100}
+            />
+            {textLength + 1 === myName.length ? "." : "|"}
+          </h1>
+          <p className="mt-4 text-xl max-w-md text-center">
+            I am a passionate Web Developer with a strong focus on creating
+            dynamic and responsive web applications.
+          </p>
+          <div className="mt-5 flex space-x-4">
             <a
               href={resume}
               download="Sarajit_Mandal_Resume.pdf"
@@ -50,6 +50,14 @@ const Hero = () => {
               My CV <FaDownload />
             </a>
           </div>
+        </div>
+
+        {/* Right Section (Video CV) */}
+        <div className="md:w-1/2 flex justify-center py-2 px-3">
+          <video controls className="w-full max-w-md rounded-lg shadow-lg">
+            <source src="/path/to/your/video-cv.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
