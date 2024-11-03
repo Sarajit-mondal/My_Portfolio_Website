@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TypewriterEffect from "./TypewriterEffect";
-import resume from "../assets/resume.pdf";
+import resumeOfSarajit from "../assets/resumeOfSarajit.pdf";
 import CV from "../assets/CV.pdf";
 import { FaDownload } from "react-icons/fa";
 
@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
           <div className="mt-5 flex space-x-4">
             <a
-              href={resume}
+              href={resumeOfSarajit}
               download="Sarajit_Mandal_Resume.pdf"
               className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 transition duration-300 flex items-center gap-2 font-bold"
             >
